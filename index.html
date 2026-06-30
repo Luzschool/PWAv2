@@ -43,22 +43,18 @@
 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <div class="stat-icon">🔥</div>
                         <div class="stat-value" id="dashKcal">0</div>
                         <div class="stat-label" data-i18n="labelKcal">kcal vandaag</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">⚡</div>
                         <div class="stat-value" id="dashKJ">0</div>
                         <div class="stat-label" data-i18n="labelKJ">kJ vandaag</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">🏃</div>
                         <div class="stat-value" id="dashActiviteiten">0</div>
                         <div class="stat-label" data-i18n="labelActiviteiten">activiteiten</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">📊</div>
                         <div class="stat-value" id="dashGemiddeld">0</div>
                         <div class="stat-label" data-i18n="labelGemiddeld">gem. kcal/dag</div>
                     </div>
@@ -67,7 +63,7 @@
                 <!-- Water Tracker Widget -->
                 <div class="water-tracker-card">
                     <div class="water-header">
-                        <h3>💧 <span data-i18n="waterTitle">Water Tracker</span></h3>
+                        <h3><span data-i18n="waterTitle">Water Tracker</span></h3>
                         <span class="water-goal" id="waterGoalText">0 / 2500 ml</span>
                     </div>
                     <div class="water-visual">
@@ -211,7 +207,7 @@
 
                 <!-- BMI Calculator -->
                 <div class="tool-card">
-                    <h3>⚖️ <span data-i18n="bmiTitle">BMI Calculator</span></h3>
+                    <h3><span data-i18n="bmiTitle">BMI Calculator</span></h3>
                     <p class="tool-desc" data-i18n="bmiDesc">Bereken je Body Mass Index op basis van lengte en gewicht.</p>
 
                     <div class="form-row">
@@ -243,7 +239,7 @@
 
                 <!-- Slaapcalculator -->
                 <div class="tool-card">
-                    <h3>😴 <span data-i18n="slaapTitle">Slaapcalculator</span></h3>
+                    <h3><span data-i18n="slaapTitle">Slaapcalculator</span></h3>
                     <p class="tool-desc" data-i18n="slaapDesc">Bereken je slaapduur en kwaliteit op basis van bedtijd en wektijd.</p>
 
                     <div class="form-row">
@@ -266,14 +262,14 @@
 
                 <!-- Data Management -->
                 <div class="tool-card tool-danger">
-                    <h3>🗂️ <span data-i18n="dataTitle">Data Beheer</span></h3>
+                    <h3><span data-i18n="dataTitle">Data Beheer</span></h3>
                     <p class="tool-desc" data-i18n="dataDesc">Exporteer, importeer of reset alle gegevens.</p>
 
                     <div class="tool-actions">
-                        <button class="btn-secondary" onclick="exportData()" data-i18n="btnExport">📥 Exporteer JSON</button>
-                        <button class="btn-secondary" onclick="document.getElementById('importFile').click()" data-i18n="btnImport">📤 Importeer JSON</button>
+                        <button class="btn-secondary" onclick="exportData()" data-i18n="btnExport">Exporteer JSON</button>
+                        <button class="btn-secondary" onclick="document.getElementById('importFile').click()" data-i18n="btnImport">Importeer JSON</button>
                         <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(this)">
-                        <button class="btn-danger" onclick="resetAllDataConfirm()" data-i18n="btnResetAll">🗑️ Reset alle data</button>
+                        <button class="btn-danger" onclick="resetAllDataConfirm()" data-i18n="btnResetAll">Reset alle data</button>
                     </div>
                 </div>
             </div>
@@ -281,7 +277,7 @@
     </main>
 
     <footer>
-        <p data-i18n="footerText">© 2026 Mijn Gezondheid PWA</p>
+        <p data-i18n="footerText">Mijn Gezondheid PWA</p>
     </footer>
 
     <!-- Toast notification -->

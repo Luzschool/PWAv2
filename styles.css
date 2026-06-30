@@ -1,24 +1,24 @@
 /* CSS CUSTOM PROPERTIES */
 :root {
-    --primary: #2ecc71;
-    --primary-dark: #27ae60;
-    --primary-light: #d5f5e3;
-    --secondary: #3498db;
+    --primary: #4f8cf7;
+    --primary-dark: #2658c6;
+    --primary-light: #d8e8ff;
+    --secondary: #82b8ff;
     --danger: #e74c3c;
     --warning: #f39c12;
-    --bg: #f8f9fa;
+    --bg: #f9fbff;
     --card-bg: #ffffff;
-    --text: #2c3e50;
-    --text-light: #7f8c8d;
-    --border: #e0e0e0;
-    --shadow: 0 2px 8px rgba(0,0,0,0.08);
-    --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
-    --radius: 12px;
-    --radius-sm: 8px;
-    --transition: all 0.3s ease;
+    --text: #203243;
+    --text-light: #6c7b8a;
+    --border: #d9e4f5;
+    --shadow: 0 12px 30px rgba(32,52,67,0.08);
+    --shadow-hover: 0 12px 30px rgba(32,52,67,0.12);
+    --radius: 14px;
+    --radius-sm: 10px;
+    --transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
     --header-height: 64px;
-    --water-color: #3498db;
-    --water-light: #85c1e9;
+    --water-color: #4f8cf7;
+    --water-light: #d8e8ff;
 }
 
 /* DARK MODE */
@@ -229,14 +229,16 @@ h3 {
 }
 
 .stat-icon {
-    font-size: 1.75rem;
-    margin-bottom: 0.5rem;
-    animation: bounce 2s infinite;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto 1rem;
+    border-radius: 14px;
+    background: var(--primary-light);
 }
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-4px); }
+    50% { transform: translateY(0); }
 }
 
 .stat-value {
@@ -322,32 +324,7 @@ h3 {
 }
 
 .water-bubbles {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    pointer-events: none;
-}
-
-.water-bubbles span {
-    position: absolute;
-    bottom: -10px;
-    width: 8px;
-    height: 8px;
-    background: rgba(255,255,255,0.4);
-    border-radius: 50%;
-    animation: bubble 3s infinite;
-}
-
-.water-bubbles span:nth-child(1) { left: 20%; animation-delay: 0s; }
-.water-bubbles span:nth-child(2) { left: 50%; animation-delay: 1s; width: 6px; height: 6px; }
-.water-bubbles span:nth-child(3) { left: 70%; animation-delay: 2s; width: 10px; height: 10px; }
-
-@keyframes bubble {
-    0% { bottom: -10px; opacity: 0; }
-    20% { opacity: 1; }
-    100% { bottom: 100%; opacity: 0; }
+    display: none;
 }
 
 .water-percentage {
@@ -544,6 +521,7 @@ input:focus, select:focus {
 
 .tool-card:hover {
     box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
 }
 
 .tool-desc {
@@ -682,7 +660,7 @@ input:focus, select:focus {
 
 .entry-card:hover {
     box-shadow: var(--shadow-hover);
-    transform: translateX(4px);
+    transform: translateX(1px);
 }
 
 .entry-card.removing {
@@ -757,7 +735,6 @@ input:focus, select:focus {
 
 .btn-delete:hover {
     background: #fdeaea;
-    transform: scale(1.1);
 }
 
 .empty-state {
